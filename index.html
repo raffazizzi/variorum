@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/css/tei.css" />
+    <link rel="stylesheet" href="dist/css/variorum.css" />
+  </head>
+  <body>
+
+  	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Variorum (prototype) - Tasso in Music demo</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+      	 <div class="col-sm-3 col-md-2 sidebar">
+          <h4>Sources</h4>
+          <ul class="nav nav-sidebar" id="select_source">
+            
+          </ul>
+        </div>
+      	<div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 main" id="TEI"></div>
+
+      	<div class="col-sm-3 col-sm-offset-9 col-md-2 col-md-offset-10 sidebar">
+      		<h4>Variant info</h4>
+      		<div id="variant_info">
+      		</div>
+      	</div>
+      </div>
+    </div> 
+    
+    <!-- loading ES5 deps + main js -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="dist/js/variorum.js"></script>
+  </body>
+</html>
