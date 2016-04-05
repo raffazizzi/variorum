@@ -5,6 +5,10 @@
   "main": "src/index.js",
   "author": "Raff Viglianti",
   "license": "MIT",
+  "repository": {
+    "type": "git", 
+    "url": "git://github.com/raffazizzi/variorum.git"
+  },
   "dependencies": {
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.5",
