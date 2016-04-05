@@ -12,11 +12,14 @@ See the [index.html](https://github.com/raffazizzi/variorum/blob/gh-pages/index.
 To re-compile dist/js/variorum.js, do these commands within the variorum
 base directory:
 
+```bash
    sudo npm install -g gulp
    npm install
    gulp
+```
 
 To run a local installation of variorum for development:
 
+```bash
    gulp run
-
+```
