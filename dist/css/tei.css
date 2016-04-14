@@ -19,3 +19,7 @@ tei-lg > tei-l:not(:first-child) {
 tei-l {
 	display: block;
 }
+
+tei-del {
+	text-decoration: line-through;
+}
