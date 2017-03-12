@@ -11,25 +11,25 @@
                 <availability status="free">
                     <p>CC BY SA</p>
                 </availability>
-                <idno>E2</idno>
+                <idno>E3</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc>
                     <msIdentifier>
                         <region>Italy</region>
                         <settlement>Modena</settlement>
-                        <repository>Biblioteca Estense Universitaria</repository>
-                        <idno>Ms. It. 379a</idno>
+                        <repository>Biblioteca dell’Archiginnasio</repository>
+                        <idno>Ms. It. 381</idno>
                     </msIdentifier>
                     <msContents>
                         <msItem>
-                            <locus>f. 5r</locus>
+                            <locus>f. 7v</locus>
                             <p>Autograph manuscript</p>
                         </msItem>
                     </msContents>
                     <history>
                         <origin>
-                            <origDate notBefore="1585" notAfter="1587">1585-87</origDate>
+                            <origDate when="1584" cert="medium">1584</origDate>
                         </origin>
                     </history>
                 </msDesc>
@@ -50,7 +50,6 @@
                     <l xml:id="l5">e chi nasconde il sole!</l>
                     <l xml:id="l6">perché non splenda <seg xml:id="v4">fuor</seg> com’egli <seg xml:id="v5">sole</seg>?</l>
                     <l xml:id="l7">occhi <seg xml:id="v6">graditi</seg> e cari,</l>
-                    <l xml:id="l8">occhi sereni e chiari,</l>
                     <l xml:id="l9">voi somigliar sovente</l>
                     <l xml:id="l10">fate <seg xml:id="v7">quest’umil</seg> villa <seg xml:id="v8">un l’Oriente</seg>.</l>
                 </lg>

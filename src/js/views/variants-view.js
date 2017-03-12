@@ -11,7 +11,7 @@ class VariantsView extends Backbone.View {
     	let sourceid = this.source.get("source");
     	// Start by highlighting affected ids
     	for (let variant of this.variants){
-            
+
     		(new ReadingView({"collection":variant, "source": sourceid, "el": "#variant_info"})).render();
 
     	}

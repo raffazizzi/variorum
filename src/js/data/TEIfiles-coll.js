@@ -12,9 +12,9 @@ class TEIfiles extends Backbone.Collection {
         let deferreds = [];
 
         for (let file of files) {
-            let source = file.match(/[\/](\w+)\.xml/)[1];
+            let source = file.match(/[\/]([^\/]+)\.xml/)[1];
             deferreds.push(
-                $.ajax( file ).success( (data) => {this.add({"source" : source, "data":data});} )                
+                $.ajax( file ).success( (data) => {this.add({"source" : source, "data":data});} )
             );
         }
 

@@ -11,6 +11,7 @@
                 <availability status="free">
                     <p>CC BY SA</p>
                 </availability>
+                <idno>Solerti71</idno>
             </publicationStmt>
             <sourceDesc>
                 <bibl>
@@ -19,26 +20,32 @@
                     <publisher>Giulio Vasalini</publisher>
                     <pubPlace>Venetia</pubPlace>
                     <date when="1589">1589</date>
+                    <biblScope unit="page">64</biblScope>
                 </bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <body xml:space="preserve">
-            <lg>
-                <l xml:id="l1">Non <seg xml:id="v1">pur l’humil terreno</seg></l>
-                <l xml:id="l2">Tra <seg xml:id="v2">primi</seg> abeti, e faggi</l>
-                <l xml:id="l3"><seg xml:id="v3">Celano </seg>i vostri puri e lieti raggi.</l>
-            </lg>
-            <lg>
-                <l xml:id="l4">E chi nasconde il sole,</l>
-                <l xml:id="l5">E ’l vivo e dolce foco</l>
-                <l xml:id="l6">Perche non splenda <seg xml:id="v4">pur</seg>, com’egli <seg xml:id="v5">suole</seg>?</l>
-                <l xml:id="l7">Occhi <seg xml:id="v6">soavi</seg>, e cari,</l>
-                <l xml:id="l8">Occhi sereni, e chiari,</l>
-                <l xml:id="l9">Voi somigliar sovente</l>
-                <l xml:id="l10">Fate <seg xml:id="v7">l’angusta</seg> Villa <seg xml:id="v8">à l’Oriente</seg>.</l>
-            </lg>
+            <div type="dedication">
+                <p xml:id="p1">Alla sua amata</p>
+            </div>
+            <div>
+                <lg>
+                    <l xml:id="l1">Non <seg xml:id="v1">pur l’humil terreno</seg></l>
+                    <l xml:id="l2">Tra <seg xml:id="v2">primi</seg> abeti, e faggi</l>
+                    <l xml:id="l3"><seg xml:id="v3">Celano </seg>i vostri puri e lieti raggi.</l>
+                </lg>
+                <lg>
+                    <l xml:id="l4">E chi nasconde il sole,</l>
+                    <l xml:id="l5">E ’l vivo e dolce foco</l>
+                    <l xml:id="l6">Perche non splenda <seg xml:id="v4">pur</seg>, com’egli <seg xml:id="v5">suole</seg>?</l>
+                    <l xml:id="l7">Occhi <seg xml:id="v6">soavi</seg>, e cari,</l>
+                    <l xml:id="l8">Occhi sereni, e chiari,</l>
+                    <l xml:id="l9">Voi somigliar sovente</l>
+                    <l xml:id="l10">Fate <seg xml:id="v7">l’angusta</seg> Villa <seg xml:id="v8">à l’Oriente</seg>.</l>
+                </lg>
+            </div>
         </body>
     </text>
 </TEI>
