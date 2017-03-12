@@ -20,28 +20,65 @@
       <body>
          <ab>
             <app>
-               <rdg wit="#E2">
-                  <ptr target="E2.xml#v1"></ptr>
+               <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#p1"/>
+                  </rdg>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#p1"/>
+                  </rdg>
+               </rdgGrp>
+               <rdg wit="#Solerti71">
+                  <ptr target="Solerti71.xml#p1"/>
                </rdg>
+               <rdgGrp n="2">
+                  <rdg wit="#Trm0319a-Canto"/>
+                  <rdg wit="#Trm0319a-Basso"/>
+               </rdgGrp>
+            </app>
+            <app>
+               <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#v1"></ptr>
+                  </rdg>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#v1"></ptr>
+                  </rdg>
+               </rdgGrp>               
                <rdg wit="#Solerti71">
                   <ptr target="Solerti71.xml#v1"></ptr>
                </rdg>
-               <rdg wit="#Tas0319a">
-                  <ptr target="Tas0319a.xml#v1"></ptr>
-               </rdg>
-            </app><app>
-               <rdg wit="#E2">
-                  <ptr target="E2.xml#v2"></ptr>
-               </rdg>
+               <rdgGrp n="2">
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a.xml#v1"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a.xml#v1"></ptr>
+                  </rdg>
+               </rdgGrp>
+            </app>
+            <app>
                <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#v2"></ptr>
+                  </rdg>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#v2"></ptr>
+                  </rdg>
+               </rdgGrp>
+               <rdgGrp n="2">
                   <rdg wit="#Solerti71">
                      <ptr target="Solerti71.xml#v2"></ptr>
                   </rdg>
-                  <rdg wit="#Tas0319a">
-                     <ptr target="Tas0319a.xml#v2"></ptr>
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a.xml#v2"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a.xml#v2"></ptr>
                   </rdg>
                </rdgGrp>
-            </app><app>
+            </app>
+            <app>
                <rdg wit="#Solerti71">
                   <ptr target="Solerti71.xml#v3"></ptr>
                </rdg>
@@ -49,90 +86,176 @@
                   <rdg wit="#E2">
                      <ptr target="E2.xml#v3"></ptr>
                   </rdg>
-                  <rdg wit="#Tas0319a">
-                     <ptr target="Tas0319a.xml#v3"></ptr>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#v3"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a.xml#v3"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a.xml#v3"></ptr>
                   </rdg>
                </rdgGrp>
-            </app><app>
-               <rdg wit="#E2">
-                  <ptr target="E2.xml#l4"></ptr>
-               </rdg>
+            </app>
+            <app>
+               <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#l4"></ptr>
+                  </rdg>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#l4"></ptr>
+                  </rdg>
+               </rdgGrp>               
                <rdg wit="#Solerti71">
                   <ptr target="Solerti71.xml#l4"></ptr>
                </rdg>
-               <rdg wit="#Tas0319a">
-                  <ptr target="Tas0319a.xml#l4"></ptr>
-               </rdg>
-            </app><app>
+               <rdgGrp n="2">
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a.xml#l4"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a.xml#l4"></ptr>
+                  </rdg>
+               </rdgGrp>               
+            </app>
+            <app>
                <rdg wit="#Solerti71">
                   <ptr target="Solerti71.xml#l5"></ptr>
                </rdg>
                <rdgGrp n="1">
                   <rdg wit="#E2">
-                     <ptr target="E2.xml#l5"></ptr>
+                     <ptr target="E2.ml#l5"></ptr>
                   </rdg>
-                  <rdg wit="#Tas0319a">
-                     <ptr target="Tas0319a.xml#l5"></ptr>
+                  <rdg wit="#E3">
+                     <ptr target="E3.ml#l5"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a.xml#l5"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a.xml#l5"></ptr>
                   </rdg>
                </rdgGrp>
-            </app><app>
-               <rdg wit="#E2">
-                  <ptr target="E2.xml#v4"></ptr>
-               </rdg>
+            </app>
+            <app>
                <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#v4"></ptr>
+                  </rdg>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#v4"></ptr>
+                  </rdg>
+               </rdgGrp>               
+               <rdgGrp n="2">
                   <rdg wit="#Solerti71">
                      <ptr target="Solerti71.xml#v4"></ptr>
                   </rdg>
-                  <rdg wit="#Tas0319a">
-                     <ptr target="Tas0319a.xml#v4"></ptr>
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a-Canto.xml#v4"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a-Basso.xml#v4"></ptr>
                   </rdg>
                </rdgGrp>
-            </app><app>
-               <rdg wit="#E2">
-                  <ptr target="E2.xml#v5"></ptr>
-               </rdg>
+            </app>
+            <app>
                <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#v5"></ptr>
+                  </rdg>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#v5"></ptr>
+                  </rdg>
+               </rdgGrp>               
+               <rdgGrp n="2">
                   <rdg wit="#Solerti71">
-                     <ptr target="Solerti71.xml#v5"></ptr>
+                     <ptr target="Solerti71.ml#v5"></ptr>
                   </rdg>
-                  <rdg wit="#Tas0319a">
-                     <ptr target="Tas0319a.xml#v5"></ptr>
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a-Canto.xml#v5"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a-Basso.xml#v5"></ptr>
                   </rdg>
                </rdgGrp>
-            </app><app>
-               <rdg wit="#E2">
-                  <ptr target="E2.xml#v6"></ptr>
-               </rdg>
+            </app>
+            <app>
                <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#v6"></ptr>
+                  </rdg>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#v6"></ptr>
+                  </rdg>
+               </rdgGrp>               
+               <rdgGrp n="2">
                   <rdg wit="#Solerti71">
                      <ptr target="Solerti71.xml#v6"></ptr>
                   </rdg>
-                  <rdg wit="#Tas0319a">
-                     <ptr target="Tas0319a.xml#v6"></ptr>
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a-Canto.xml#v6"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a-Basso.xml#v6"></ptr>
                   </rdg>
                </rdgGrp>
-            </app><app>
-               <rdg wit="#E2">
-                  <ptr target="E2.xml#v7"></ptr>
-               </rdg>
+            </app>
+            <app>
                <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#l8"/>
+                  </rdg>
+                  <rdg wit="#Solerti71">
+                     <ptr target="Solerti71.xml#l8"/>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a-Canto.xml#l8"/>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a-Basso.xml#l8"/>
+                  </rdg>
+               </rdgGrp>
+               <rdg wit="#E3"/>
+            </app>
+            <app>
+               <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#v7"></ptr>
+                  </rdg>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#v7"></ptr>
+                  </rdg>
+               </rdgGrp>               
+               <rdgGrp n="2">
                   <rdg wit="#Solerti71">
                      <ptr target="Solerti71.xml#v7"></ptr>
                   </rdg>
-                  <rdg wit="#Tas0319a">
-                     <ptr target="Tas0319a.xml#v7"></ptr>
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a-Canto.xml#v7"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a-Basso.xml#v7"></ptr>
                   </rdg>
                </rdgGrp>
-            </app><app>
-               <rdg wit="#E2">
-                  <ptr target="E2.xml#v8"></ptr>
-               </rdg>
+            </app>
+            <app>
                <rdgGrp n="1">
+                  <rdg wit="#E2">
+                     <ptr target="E2.xml#v8"></ptr>
+                  </rdg>
+                  <rdg wit="#E3">
+                     <ptr target="E3.xml#v8"></ptr>
+                  </rdg>
+               </rdgGrp>               
+               <rdgGrp n="2">
                   <rdg wit="#Solerti71">
                      <ptr target="Solerti71.xml#v8"></ptr>
                   </rdg>
-                  <rdg wit="#Tas0319a">
-                     <ptr target="Tas0319a.xml#v8"></ptr>
+                  <rdg wit="#Trm0319a-Canto">
+                     <ptr target="Trm0319a-Canto.xml#v8"></ptr>
+                  </rdg>
+                  <rdg wit="#Trm0319a-Basso">
+                     <ptr target="Trm0319a-Basso.xml#v8"></ptr>
                   </rdg>
                </rdgGrp>
             </app>

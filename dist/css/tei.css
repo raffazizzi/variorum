@@ -23,3 +23,16 @@ tei-l {
 tei-del {
 	text-decoration: line-through;
 }
+
+tei-div[type=dedication] {
+	font-size: smaller;
+	font-style: italic;
+}
+
+tei-supplied::before {
+	content: "[";
+}
+
+tei-supplied::after {
+	content: "]";
+}

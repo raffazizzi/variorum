@@ -5,17 +5,17 @@ class Variorum {
     constructor(options){
         this.files = options.files;
         this.collation = options.collation;
-        this.TEIfiles = {}; 
+        this.TEIfiles = {};
     }
 
-    loadTEI() { 
+    loadTEI() {
 
-        // Store all ajax calls in array
+        // Store all ajax calls in an array
         let deferreds = [];
 
         for (let file of this.files) {
             deferreds.push(
-                $.ajax( file ).success( (data) => {this.TEIfiles[file] = data;} )                
+                $.ajax( file ).success( (data) => {this.TEIfiles[file] = data;} )
             );
         }
 

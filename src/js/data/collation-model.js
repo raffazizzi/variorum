@@ -8,19 +8,32 @@ class Collation extends Backbone.Model {
         let TEIfiles = this.get("TEIfiles");
 
         let createReadingData = function(rdg){
+						let data = {
+                "source" : "",
+                "idref" : "",
+                "elementRef" : null,
+                "text" : "[missing]"
+            }
             let $rdg = $(rdg);
             let source = $rdg.attr('wit').slice(1);
-            let idref = $rdg.find("ptr").attr("target").split("#")[1];
-            let elementRef = $(TEIfiles.where({source: source})[0].get("html5")).find('*[xml\\:id='+idref+']');
-            let text = elementRef.text();
+						data.source = source;
+						let $ptr = $rdg.find("ptr");
+						if ($ptr.length > 0){
+							let idref = $rdg.find("ptr").attr("target").split("#")[1];
+							data.idref = idref;
+							let elementRef = $(TEIfiles.where({source: source})[0].get("html5")).find('*[xml\\:id='+idref+']');
+							data.elementRef = elementRef;
+							let text = elementRef.text();
+							// Check if this variant is part of supplied text, so that it can be showed in [ ]
+							if (elementRef.closest("tei-supplied").length > 0){
+								text = "["+text+"]"
+							}
+							// data.text = elementRef.contents().filter(function () { return this.nodeType == 3; });
+							data.text = text
+						}
 
-            return {
-                "source" : source,
-                "idref" : idref,
-                "elementRef" : elementRef,
-                "text" : text
-            };
-            
+            return data;
+
         }
 
 		$(data).find("app").each(function(i_a, app){
@@ -29,20 +42,17 @@ class Collation extends Backbone.Model {
             let variant = new Variant();
 
             $(app).children().each(function(i_rg, reading){
-                if (reading.tagName == "rdg") {
+								if (reading.tagName == "rdg") {
                     variant.add(createReadingData(reading))
-                } 
+                }
                 else {
-                    let grouped = [];
                     let toCreate = [];
-
                     $(reading).children().each(function(i_r, rdg){
                         toCreate.push(createReadingData(rdg));
-                        grouped.push($(rdg).find("ptr").attr("target").split(".xml")[0]);                        
                     });
-                    
+
                     for (let r of toCreate) {
-                        r["agreeing"] = grouped;
+                        r["group"] = $(reading).attr("n");
                         variant.add(r);
                     }
                 }
