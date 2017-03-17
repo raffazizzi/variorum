@@ -10,6 +10,7 @@ class Collation extends Backbone.Model {
         let createReadingData = function(rdg){
 						let data = {
                 "source" : "",
+								"label": "",
                 "idref" : "",
                 "elementRef" : null,
                 "text" : "[missing]"
@@ -18,19 +19,23 @@ class Collation extends Backbone.Model {
             let source = $rdg.attr('wit').slice(1);
 						data.source = source;
 						let $ptr = $rdg.find("ptr");
+						let source_data = $(TEIfiles.where({source: source})[0].get("html5"))
+						if (source_data.find("tei-publicationStmt tei-idno[type=label]").length > 0) {
+							data.label = source_data.find("tei-publicationStmt tei-idno[type=label]").text()
+						}
+						else {
+								data.label = source_data.find("tei-publicationStmt tei-idno[type=local]").text()
+						}
 						if ($ptr.length > 0){
 							let idref = $rdg.find("ptr").attr("target").split("#")[1];
 							data.idref = idref;
-							let source_data = $(TEIfiles.where({source: source})[0].get("html5"))
 							let elementRef = source_data.find('*[xml\\:id='+idref+']');
-							data.label = source_data.find("tei-publicationStmt tei-idno").text()
 							data.elementRef = elementRef;
 							let text = elementRef.text();
 							// Check if this variant is part of supplied text, so that it can be showed in [ ]
 							if (elementRef.closest("tei-supplied").length > 0){
 								text = "["+text+"]"
 							}
-							// data.text = elementRef.contents().filter(function () { return this.nodeType == 3; });
 							data.text = text
 						}
 

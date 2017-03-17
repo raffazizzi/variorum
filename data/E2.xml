@@ -11,7 +11,7 @@
                 <availability status="free">
                     <p>CC BY SA</p>
                 </availability>
-                <idno>E2</idno>
+                <idno type="local">E2</idno>
             </publicationStmt>
             <sourceDesc>
                 <msDesc xml:id="E2">

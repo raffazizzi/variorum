@@ -17,9 +17,16 @@ class TEIfilesView extends Backbone.View {
             }
             else model.set("selected", false);
             let $mei = $(model.get("html5"));
-            let tei_idno = $mei.find("tei-publicationStmt tei-idno").text()
+            let tei_idno = $mei.find("tei-publicationStmt tei-idno[type=local]").text()
+            // let label = ""
+            // if ($mei.find("tei-publicationStmt tei-idno[type=label]").length > 0) {
+            //   label = $mei.find("tei-publicationStmt tei-idno[type=label]").text()
+            // }
+            // else {
+            //   label = tei_idno
+            // }
             // Set human readable label
-            model.set("label", tei_idno)
+            // model.set("label", label)
             if ($mei.find("tei-bibl[type=music]").length > 0) {
               mus.push({idno: tei_idno, data: model.toJSON()})
             }

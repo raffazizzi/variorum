@@ -30,7 +30,7 @@ class ReadingView extends Backbone.View {
 					this.collection.each((r)=>{
 						if (r.get("group") && r.get("group") == this_source.get("group") &&
 						    r.get("source") != this_source.get("source")) {
-							agreeing.push(r.get("source"))
+							agreeing.push(r.get("label"))
 						}
 					});
 
