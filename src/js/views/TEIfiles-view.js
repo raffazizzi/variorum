@@ -8,7 +8,8 @@ class TEIfilesView extends Backbone.View {
         this.selected = options.selected;
     }
     render(){
-        let lit = []
+        let lit_ms = []
+        let lit_p = []
         let mus = []
         this.collection.each((model) => {
             if (model.get("source") == this.selected){
@@ -19,8 +20,11 @@ class TEIfilesView extends Backbone.View {
             if ($mei.find("tei-bibl[type=music]").length > 0) {
               mus.push({idno: $mei.find("tei-publicationStmt tei-idno").text(), data: model.toJSON()})
             }
+            else if ($mei.find("tei-msDesc").length > 0) {
+              lit_ms.push(model.toJSON())
+            }
             else {
-              lit.push(model.toJSON())
+              lit_p.push(model.toJSON())
             }
         });
 
@@ -32,7 +36,8 @@ class TEIfilesView extends Backbone.View {
           return hash.set(idno, current);
         }, new Map).values()];
 
-        this.$el.find("#lit").html(TEIfiles_tpl(lit));
+        this.$el.find("#lit_ms").html(TEIfiles_tpl(lit_ms));
+        this.$el.find("#lit_p").html(TEIfiles_tpl(lit_p));
         this.$el.find("#mus").html(TEIfiles_mus_tpl(grouped_mus));
     }
 }

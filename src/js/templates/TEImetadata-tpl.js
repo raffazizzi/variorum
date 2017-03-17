@@ -7,9 +7,10 @@ let TEImetadata_tpl = `
   	<li>{{ms.idno}}</li>
   	<li>{{ms.repository}}, {{ms.settlement}} {{ms.region}}</li>
   	<li>{{ms.origDate}}</li>
+    <li>{{ms.locus}}</li>
   {{/if}}
   {{#if print}}
-  	<li>{{print.title}}</li>
+  	<li><em>{{print.title}}</em></li>
   	{{#if print.composer}}<li>{{print.composer}}</li>{{/if}}
   	<li>{{print.publisher}}, {{print.pubPlace}} {{print.region}}</li>
   	<li>{{print.date}}</li>
