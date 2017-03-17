@@ -5,43 +5,43 @@ class Collation extends Backbone.Model {
 	initialize() {
 		let variants = [];
 		let data = this.get("data");
-        let TEIfiles = this.get("TEIfiles");
+    let TEIfiles = this.get("TEIfiles");
 
-        let createReadingData = function(rdg){
-						let data = {
-                "source" : "",
-								"label": "",
-                "idref" : "",
-                "elementRef" : null,
-                "text" : "[missing]"
-            }
-            let $rdg = $(rdg);
-            let source = $rdg.attr('wit').slice(1);
-						data.source = source;
-						let $ptr = $rdg.find("ptr");
-						let source_data = $(TEIfiles.where({source: source})[0].get("html5"))
-						if (source_data.find("tei-publicationStmt tei-idno[type=label]").length > 0) {
-							data.label = source_data.find("tei-publicationStmt tei-idno[type=label]").text()
-						}
-						else {
-								data.label = source_data.find("tei-publicationStmt tei-idno[type=local]").text()
-						}
-						if ($ptr.length > 0){
-							let idref = $rdg.find("ptr").attr("target").split("#")[1];
-							data.idref = idref;
-							let elementRef = source_data.find('*[xml\\:id='+idref+']');
-							data.elementRef = elementRef;
-							let text = elementRef.text();
-							// Check if this variant is part of supplied text, so that it can be showed in [ ]
-							if (elementRef.closest("tei-supplied").length > 0){
-								text = "["+text+"]"
-							}
-							data.text = text
-						}
-
-            return data;
-
+    let createReadingData = function(rdg){
+				let data = {
+            "source" : "",
+						"label": "",
+            "idref" : "",
+            "elementRef" : null,
+            "text" : "[missing]"
         }
+        let $rdg = $(rdg);
+        let source = $rdg.attr('wit').slice(1);
+				data.source = source;
+				let $ptr = $rdg.find("ptr");
+				let source_data = $(TEIfiles.where({source: source})[0].get("html5"))
+				if (source_data.find("tei-publicationStmt tei-idno[type=label]").length > 0) {
+					data.label = source_data.find("tei-publicationStmt tei-idno[type=label]").text()
+				}
+				else {
+						data.label = source_data.find("tei-publicationStmt tei-idno[type=local]").text()
+				}
+				if ($ptr.length > 0){
+					let idref = $rdg.find("ptr").attr("target").split("#")[1];
+					data.idref = idref;
+					let elementRef = source_data.find('*[xml\\:id='+idref+']');
+					data.elementRef = elementRef;
+					let text = elementRef.text();
+					// Check if this variant is part of supplied text, so that it can be showed in [ ]
+					if (elementRef.closest("tei-supplied").length > 0){
+						text = "["+text+"]"
+					}
+					data.text = text
+				}
+
+        return data;
+
+    }
 
 		$(data).find("app").each(function(i_a, app){
 
@@ -50,7 +50,10 @@ class Collation extends Backbone.Model {
 
             $(app).children().each(function(i_rg, reading){
 								if (reading.tagName == "rdg") {
-                    variant.add(createReadingData(reading))
+									  // add it at the right place based on TEIfiles
+										let source = $(reading).attr('wit').slice(1);
+										let idx = TEIfiles.indexOf(TEIfiles.where({source: source})[0])
+                    variant.add(createReadingData(reading), {at:idx})
                 }
                 else {
                     let toCreate = [];
