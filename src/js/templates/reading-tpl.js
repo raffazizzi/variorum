@@ -9,7 +9,7 @@ Handlebars.registerHelper('list', function(context, options) {
 let reading_tpl = `
 {{#each .}}
 <div>
-	<p><a href="#/source/{{this.source}}">{{this.source}}</a></p>
+	<p><a href="#/source/{{this.source}}">{{this.label}}</a></p>
 	{{#if this.agrees}}<p>(<span class="agrees">agrees with displayed</span>)</p>{{/if}}
 	{{#if this.agreeing}}(agrees with
 		{{#list this.agreeing}}{{this}}{{/list}})

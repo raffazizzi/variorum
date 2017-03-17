@@ -17,8 +17,11 @@ class TEIfilesView extends Backbone.View {
             }
             else model.set("selected", false);
             let $mei = $(model.get("html5"));
+            let tei_idno = $mei.find("tei-publicationStmt tei-idno").text()
+            // Set human readable label
+            model.set("label", tei_idno)
             if ($mei.find("tei-bibl[type=music]").length > 0) {
-              mus.push({idno: $mei.find("tei-publicationStmt tei-idno").text(), data: model.toJSON()})
+              mus.push({idno: tei_idno, data: model.toJSON()})
             }
             else if ($mei.find("tei-msDesc").length > 0) {
               lit_ms.push(model.toJSON())

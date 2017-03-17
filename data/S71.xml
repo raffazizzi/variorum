@@ -14,7 +14,7 @@
                 <idno>71</idno>
             </publicationStmt>
             <sourceDesc>
-                <bibl>
+                <bibl xml:id="S71">
                     <title>Rime nove del Sig. Torquato Tasso, composte nell’alma città di Roma. 
                         Con altre compositioni del medesimo ultimamente poste in luce </title>
                     <publisher>Giulio Vasalini</publisher>

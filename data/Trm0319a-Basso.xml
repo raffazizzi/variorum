@@ -14,7 +14,7 @@
                 <idno>Trm0319a</idno>
             </publicationStmt>
             <sourceDesc>
-                <bibl type="music">
+                <bibl type="music" xml:id="Trm0319-Basso">
                     <title>Il primo libro de madrigali a cinque voci</title>
                     <author role="composer">Gastoldi, Giovanni Giacomo</author>
                     <publisher>Ricciardo Amadino</publisher>

@@ -14,7 +14,7 @@
                 <idno>E3</idno>
             </publicationStmt>
             <sourceDesc>
-                <msDesc>
+                <msDesc xml:id="E3">
                     <msIdentifier>
                         <region>Italy</region>
                         <settlement>Modena</settlement>

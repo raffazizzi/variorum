@@ -11,10 +11,11 @@ let TEImetadata_tpl = `
   {{/if}}
   {{#if print}}
   	<li><em>{{print.title}}</em></li>
-  	{{#if print.composer}}<li>{{print.composer}}</li>{{/if}}
+  	{{#if print.author}}<li>{{print.author}}</li>{{/if}}
   	<li>{{print.publisher}}, {{print.pubPlace}} {{print.region}}</li>
   	<li>{{print.date}}</li>
   	{{#if print.idno}}<li>RISM: {{print.idno}}</li>{{/if}}
+    {{#if print.biblScope}}<li>p. {{print.biblScope}}</li>{{/if}}
   {{/if}}
 </ul>`
 

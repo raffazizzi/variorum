@@ -21,7 +21,9 @@ class Collation extends Backbone.Model {
 						if ($ptr.length > 0){
 							let idref = $rdg.find("ptr").attr("target").split("#")[1];
 							data.idref = idref;
-							let elementRef = $(TEIfiles.where({source: source})[0].get("html5")).find('*[xml\\:id='+idref+']');
+							let source_data = $(TEIfiles.where({source: source})[0].get("html5"))
+							let elementRef = source_data.find('*[xml\\:id='+idref+']');
+							data.label = source_data.find("tei-publicationStmt tei-idno").text()
 							data.elementRef = elementRef;
 							let text = elementRef.text();
 							// Check if this variant is part of supplied text, so that it can be showed in [ ]

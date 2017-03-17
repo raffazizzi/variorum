@@ -28,8 +28,8 @@
                      <ptr target="E3.xml#p1"/>
                   </rdg>
                </rdgGrp>
-               <rdg wit="#Solerti71">
-                  <ptr target="Solerti71.xml#p1"/>
+               <rdg wit="#S71">
+                  <ptr target="S71.xml#p1"/>
                </rdg>
                <rdgGrp n="2">
                   <rdg wit="#Trm0319a-Canto"/>
@@ -45,8 +45,8 @@
                      <ptr target="E3.xml#v1"></ptr>
                   </rdg>
                </rdgGrp>               
-               <rdg wit="#Solerti71">
-                  <ptr target="Solerti71.xml#v1"></ptr>
+               <rdg wit="#S71">
+                  <ptr target="S71.xml#v1"></ptr>
                </rdg>
                <rdgGrp n="2">
                   <rdg wit="#Trm0319a-Canto">
@@ -67,8 +67,8 @@
                   </rdg>
                </rdgGrp>
                <rdgGrp n="2">
-                  <rdg wit="#Solerti71">
-                     <ptr target="Solerti71.xml#v2"></ptr>
+                  <rdg wit="#S71">
+                     <ptr target="S71.xml#v2"></ptr>
                   </rdg>
                   <rdg wit="#Trm0319a-Canto">
                      <ptr target="Trm0319a.xml#v2"></ptr>
@@ -79,8 +79,8 @@
                </rdgGrp>
             </app>
             <app>
-               <rdg wit="#Solerti71">
-                  <ptr target="Solerti71.xml#v3"></ptr>
+               <rdg wit="#S71">
+                  <ptr target="S71.xml#v3"></ptr>
                </rdg>
                <rdgGrp n="1">
                   <rdg wit="#E2">
@@ -106,8 +106,8 @@
                      <ptr target="E3.xml#l4"></ptr>
                   </rdg>
                </rdgGrp>               
-               <rdg wit="#Solerti71">
-                  <ptr target="Solerti71.xml#l4"></ptr>
+               <rdg wit="#S71">
+                  <ptr target="S71.xml#l4"></ptr>
                </rdg>
                <rdgGrp n="2">
                   <rdg wit="#Trm0319a-Canto">
@@ -119,8 +119,8 @@
                </rdgGrp>               
             </app>
             <app>
-               <rdg wit="#Solerti71">
-                  <ptr target="Solerti71.xml#l5"></ptr>
+               <rdg wit="#S71">
+                  <ptr target="S71.xml#l5"></ptr>
                </rdg>
                <rdgGrp n="1">
                   <rdg wit="#E2">
@@ -147,8 +147,8 @@
                   </rdg>
                </rdgGrp>               
                <rdgGrp n="2">
-                  <rdg wit="#Solerti71">
-                     <ptr target="Solerti71.xml#v4"></ptr>
+                  <rdg wit="#S71">
+                     <ptr target="S71.xml#v4"></ptr>
                   </rdg>
                   <rdg wit="#Trm0319a-Canto">
                      <ptr target="Trm0319a-Canto.xml#v4"></ptr>
@@ -168,8 +168,8 @@
                   </rdg>
                </rdgGrp>               
                <rdgGrp n="2">
-                  <rdg wit="#Solerti71">
-                     <ptr target="Solerti71.ml#v5"></ptr>
+                  <rdg wit="#S71">
+                     <ptr target="71.ml#v5"></ptr>
                   </rdg>
                   <rdg wit="#Trm0319a-Canto">
                      <ptr target="Trm0319a-Canto.xml#v5"></ptr>
@@ -189,8 +189,8 @@
                   </rdg>
                </rdgGrp>               
                <rdgGrp n="2">
-                  <rdg wit="#Solerti71">
-                     <ptr target="Solerti71.xml#v6"></ptr>
+                  <rdg wit="#S71">
+                     <ptr target="S71.xml#v6"></ptr>
                   </rdg>
                   <rdg wit="#Trm0319a-Canto">
                      <ptr target="Trm0319a-Canto.xml#v6"></ptr>
@@ -205,8 +205,8 @@
                   <rdg wit="#E2">
                      <ptr target="E2.xml#l8"/>
                   </rdg>
-                  <rdg wit="#Solerti71">
-                     <ptr target="Solerti71.xml#l8"/>
+                  <rdg wit="#S71">
+                     <ptr target="S71.xml#l8"/>
                   </rdg>
                   <rdg wit="#Trm0319a-Canto">
                      <ptr target="Trm0319a-Canto.xml#l8"/>
@@ -227,8 +227,8 @@
                   </rdg>
                </rdgGrp>               
                <rdgGrp n="2">
-                  <rdg wit="#Solerti71">
-                     <ptr target="Solerti71.xml#v7"></ptr>
+                  <rdg wit="#S71">
+                     <ptr target="S71.xml#v7"></ptr>
                   </rdg>
                   <rdg wit="#Trm0319a-Canto">
                      <ptr target="Trm0319a-Canto.xml#v7"></ptr>
@@ -248,8 +248,8 @@
                   </rdg>
                </rdgGrp>               
                <rdgGrp n="2">
-                  <rdg wit="#Solerti71">
-                     <ptr target="Solerti71.xml#v8"></ptr>
+                  <rdg wit="#S71">
+                     <ptr target="S71.xml#v8"></ptr>
                   </rdg>
                   <rdg wit="#Trm0319a-Canto">
                      <ptr target="Trm0319a-Canto.xml#v8"></ptr>
